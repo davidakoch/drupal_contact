@@ -13,13 +13,15 @@ function contact_menu() {
 
 function contact_form() {
 	$form = array();
-	$form['Your Name']
+	$form['your_name'] = array(
+			'#title' => 'Your Name' 
+		);
 
-	$form['Your Email']
+	$form['your_email']
 
-	$form['Subject']
+	$form['subject']
 
-	$form['Your Message']
+	$form['your_message']
 
 
 	return $form; 

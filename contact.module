@@ -25,9 +25,17 @@ function contact_form() {
 			'#description' => t('Please Enter Your Email.'),
 		);
 
-	$form['subject']
+	$form['subject'] = array(
+			'#title' => 'Subject',
+			'#type' => 'textfield',
+			'#description' => t('Subject'),
+		);
 
-	$form['your_message']
+	$form['your_message'] = array(
+			'#title' => 'Your Message',
+			'#type' => 'textfield',
+			'#description' => t('Write your message'),
+		);
 
 
 	return $form; 

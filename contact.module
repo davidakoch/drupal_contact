@@ -10,3 +10,17 @@ function contact_menu() {
 			'page arguments' => array('contact_form'),
 		);
 }
+
+function contact_form() {
+	$form = array();
+	$form['Your Name']
+
+	$form['Your Email']
+
+	$form['Subject']
+
+	$form['Your Message']
+
+
+	return $form; 
+}

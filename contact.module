@@ -14,10 +14,16 @@ function contact_menu() {
 function contact_form() {
 	$form = array();
 	$form['your_name'] = array(
-			'#title' => 'Your Name' 
+			'#title' => 'Your Name', 
+			'#type' => 'textfield',
+			'#description' => t('Please Enter Your Name.'),
 		);
 
-	$form['your_email']
+	$form['your_email'] = array(
+			'#title' => 'Your Email', 
+			'#type' => 'textfield',
+			'#description' => t('Please Enter Your Email.'),
+		);
 
 	$form['subject']
 

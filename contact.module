@@ -37,6 +37,11 @@ function contact_form() {
 			'#description' => t('Write your message'),
 		);
 
+	$form['submit'] = array(
+			'#ype' => 'submit',
+			'#value' => 'Submit',
+		);
+
 
 	return $form; 
 }

@@ -11,6 +11,7 @@ function contact_menu() {
 			'page arguments' => array('contact_form'),
 		);
 
+	$items['success'] = array();
 	return $items;
 }
 
@@ -53,4 +54,8 @@ function contact_form() {
 
 function contact_form_submit($form, &$form_state) {
 	$form_state['redirect'] = 'success';	
+}
+
+function contact_success() {
+	return "Thank you for your message. I will contact you soon!";
 }

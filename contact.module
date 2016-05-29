@@ -1,15 +1,20 @@
 <?php 
 
+//Could not get this function to work. Instead added it through the navigation setting
 function contact_menu() {
 	$items = array();
 	$items['contact'] = array(
 			'title' => 'Contact Form',
-			'type' => MENU_NORMAL_ITEM, 
-			'access callback' => TRUE, 
+			'type' => MENU_NORMAL_ITEM,
+			'access callback' => TRUE,
 			'page callback' => 'drupal_get_form',
 			'page arguments' => array('contact_form'),
 		);
+
+	return $items;
 }
+
+
 
 function contact_form() {
 	$form = array();
@@ -38,7 +43,7 @@ function contact_form() {
 		);
 
 	$form['submit'] = array(
-			'#ype' => 'submit',
+			'#type' => 'submit',
 			'#value' => 'Submit',
 		);
 

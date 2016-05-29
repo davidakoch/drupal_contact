@@ -11,7 +11,12 @@ function contact_menu() {
 			'page arguments' => array('contact_form'),
 		);
 
-	$items['success'] = array();
+	$items['success'] = array(
+			'title' => 'Success',
+			'type' => MENU_CALLBACK,
+			'access callback' => TRUE,
+			'page callback' => 'contact_success',
+		);
 	return $items;
 }
 
